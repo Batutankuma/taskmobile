@@ -4,6 +4,7 @@ import 'package:taskmobile/services.dart';
 
 class ControllerTask extends GetxController with StateMixin<List<Task>> {
   ProviderServices providerServices = ProviderServices();
+  RxList listTask = [].obs;
   SharedPreferencesStorage sharedPreferencesStorage =
       SharedPreferencesStorage();
 
